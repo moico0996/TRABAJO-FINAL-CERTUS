@@ -1,0 +1,11 @@
+.noticias{
+    margin: auto;
+    margin: 70px;
+}
+.noticias-h3{
+    text-align: center;
+    background-color: orange;
+    color: white;
+    position: relative;
+    top: 40px;
+}

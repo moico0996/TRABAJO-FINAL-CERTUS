@@ -1,0 +1,27 @@
+@import url(container.css);
+@import url(titulo2.css);
+@import url(iniciar.css);
+@import url(cuadros.css);
+@import url(boton.css);
+@import url(slider.css);
+@import url(carrito.css);
+@import url(noticias.css);
+body{
+    background-color: white;
+}
+
+.navbar-brand{color: white!important;}
+.nav-link{color: white !important;}
+
+.d-flex{
+    color: white;
+}
+.titulo-prin{
+    
+    text-align: center;
+    
+}
+
+.producto{
+    border: 0.5px solid rgba(1, 2, 1, 0.5);
+}

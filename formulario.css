@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@500&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 40%;
+    height: 650px;
+    margin: auto;
+    background-color: antiquewhite;
+    position: relative;
+    top: 15px;
+    
+}
+.contenedor-h1{
+    text-align: center;
+    font-family: 'Edu SA Beginner', cursive;
+    position: relative;
+    top: 20px;
+}
+#formulario{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 1.2em;
+
+}
+#nombre, #region, #distrito, #correo, #telefono, #descripcion, #clave{
+    border-radius: 10px;
+    padding: 4px;
+    margin: 10px;
+}
+#enviar{
+    border-radius: 10px;
+    margin-top: 20px;
+}
+

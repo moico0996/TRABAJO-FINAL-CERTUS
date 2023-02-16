@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--este es el navegador con los links y titulo de la empresa en css lo encontramos con index.css  -->
+
+    <nav class="navbar navbar-expand-lg bg-dark text-white" >
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#">Viajeros Sin Tiempo</a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#noticias">NOTICIAS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  GALERIA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#container">Lugares a corta distancia</a></li>
+                  <li><a class="dropdown-item" href="#">productos nacionales</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">lugares destacados</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">videos </a>
+              </li>
+            </ul>
+            <form class="d-flex " role="search">
+              <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+       
+
+      <!--botones de inicio de sesion y registrarse a la pagina en css lo podemos encontrar con el nombre de iniciar.css el btn formulario y el btn iniciar sesion en el css cuenta.css y el html del mismo nombre-->
+      <div class="sesion  d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="boton btn btn-primary me-md-2" type="button"><a class="sesion-b" href="cuenta.html">Iniciar sesion</a></button>
+        <button class="boton btn btn-primary" type="button"><a class="sesion-a" href="formulario.html">Registrarse</a></button>
+      </div>
+       
+
+      <!--nombre de slogan e imagen de logo de empresa en css con el nombre de titulo2.css-->
+      <div class="titulo container-fluid " >
+        <img class="titulo-img img-fluid" src="fotos/logo_small.png" alt="">
+        <h2>PLANIFICA TU VIAJE</h2>
+
+      </div>
+
+    <!--slider automatico de la pagina de diferentes lugares con descripcion con bootstrap en css con el nombre de slider.css-->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="fotos/trujillo.jpg" class="slider d-block " alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>PLAZA DE ARMAS DE TRUJILLO</h5>
+              <p>La plaza de Armas de Trujillo es el espacio mas representativo de la ciudad</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="fotos/huanchaco-beach.jpg" class="slider d-block" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HUANCHACO</h5>
+              <p>lugar con un sunset imperdible a 15 min de trujillo.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="fotos/000734715W.jpg" class="slider d-block" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HUANCHACO</h5>
+              <p>Lugar donde aprovechan los bañistas a aprovechar relajarse</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="icon carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="icon carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    
+
+    <!--boton de seleccion ver carrito e icono en css con el nombre de carrito.css -->
+
+    <p>
+        <a  class="seleccion btn btn-success btn-lg" onclick="actualizarLista()"   href="#" data-bs-toggle="modal" data-bs-target="#carritoCompra">ir al carrito
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg>
+    </a>
+    </p>
+    
+    <!---modal para el carrito de compras-->
+
+  <div class="modal fade" id="carritoCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compra</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="listaCarrito" class="modal-body">
+          el carrito esta vacio...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Planificar viaje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--parte de productos turisticos que se ofrecera al usuario en css con container.css -->
+
+    <div class="container" id="container" >
+        <h1 class="container-h1">Lugares a corta distancia</h1>
+        <div class="row">
+            <div class="producto col col-lg-3 col-sm-2 col-md-2">
+                <h3>HUANCHACO</h3>
+                <p><span class="oferta">S/.100.00</span></p>
+                <p class="precio">S/.50.00</p>
+                <img class="foto-cuadro" src="fotos/huanchaco-beach.jpg" alt="">
+                <p><a class="buton btn btn-primary"  href="#" onclick="añaCar(this)"  ><span>🛒</span>agregar a carrito</a></p>
+
+            </div>
+            <div class="producto col col-lg-3 col-sm-2 col-md-2" >
+                <h3>PLAZA</h3>
+                <p><span class="oferta">S/.100.00</span> -30% </p>
+                <p class="precio">S/.50.00</p>
+                <img class="foto-cuadro" src="fotos/trujillo.jpg" alt="">
+                <p><a class="buton btn btn-primary"  href="#" onclick="añaCar(this)" ><span>🛒</span>agregar a carrito</a></p>
+
+
+            </div>
+            <div class="producto col col-lg-3 col-sm-2 col-md-2">
+                <h3>CONACHE</h3>
+                <p><span class="oferta">S/.100.00</span> -30%  </p>
+                <p class="precio">S/.50.00</p>
+                <img class="foto-cuadro" src="fotos/huanchaco-beach.jpg" alt="">
+                <p><a class="buton btn btn-primary"  href="#" onclick="añaCar(this)"   ><span>🛒</span>agregar a carrito</a></p>
+
+            </div>
+            <div class="producto col col-lg-3 col-sm-2 col-md-2">
+                <h3>SALAVERRY</h3>
+                <p><span class="oferta">S/.100.00</span> -50%  </p>
+                <p class="precio">S/.50.00</p>
+                <img class="foto-cuadro"   src="fotos/huanchaco-beach.jpg" alt="">
+                <p><a class="buton btn btn-primary"  href="#" onclick="añaCar(this)"  ><span>🛒</span>agregar a carrito</a></p>
+
+            </div>
+            <div class="producto col col-lg-3 col-sm-2 col-md-2">
+                <h3>MOCHE</h3>
+                <p><span class="oferta">S/.100.00</span> -50%  </p>
+                <p class="precio">S/.50.00</p>
+                <img class="foto-cuadro"  src="fotos/trujillo.jpg" alt="">
+                <p><a class="buton btn btn-primary"  href="#" onclick="añaCar(this)"  ><span>🛒</span>agregar a carrito</a></p>
+
+            </div>
+            <div class="producto col col-lg-3 col-sm-2 col-md-2">
+                
+                <h3>CENTRO HISTORICO</h3>
+                <p><span class="oferta">S/.100.00</span> -50%  </p>
+                <p class="precio">S/.50.00</p>
+                <img class="foto-cuadro"  src="fotos/000734715W.jpg" alt="">
+                <p><a class="buton btn btn-primary"  href="#" onclick="añacar(this)"  ><span>🛒</span>agregar a carrito</a></p>
+
+            </div>
+            <div class="producto col col-lg-3 col-sm-2 col-md-2">
+                <h3>CHAN CHAN</h3>
+                <p><span class="oferta">S/.100.00</span> -50%  </p>
+                <p class="precio">S/.50.00</p>
+                <img class="foto-cuadro"  src="fotos/trujillo.jpg" alt="">
+                <p><a class="buton btn btn-primary"  href="#" onclick="añaCar(this)"  ><span>🛒</span>agregar a carrito</a></p>
+
+            </div>
+            <div class="producto col col-lg-3 col-sm-2 col-md-2">
+                <h3>HUACAS DEL SOL</h3>
+                <p><span class="oferta">S/.100.00</span> -50%  </p>
+                <p class="precio">S/.50.00</p>
+                <img class="foto-cuadro" src="fotos/huanchaco-beach.jpg" alt="">
+                <p><a class="buton btn btn-primary"  href="#" onclick="añaCar(this)"  ><span>🛒</span>agregar a carrito</a></p>
+
+            </div>
+        </div>
+        
+        
+<!--seccion de noticias con bottstrap de tres columnas y al adapatar con dispositivo en una sola columna en css con noticias.css-->
+    </div>
+    <div class="noticias-h3">
+      <h3>NOTICIAS</h3>
+    </div>
+    <div class="noticias card-group" id="noticias" >
+      <div class="card">
+        <img src="fotos/dddd.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="fotos/chan-chan-ciudad-de-adobe-600x400.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="fotos/PlazaSalaverry.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    
+
+
+    
+    <script src="productos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
